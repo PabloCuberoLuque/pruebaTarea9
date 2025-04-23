@@ -23,6 +23,11 @@ class OperacionesAvanzadas(Calculadora):
             raise ValueError("No se puede calcular la raíz cuadrada de un número negativo")
         return a ** 0.5
 
+    # Nuevo método
+    def modulo(self, a, b):
+        if b == 0:
+            raise ValueError("No se puede dividir entre cero para módulo")
+        return a % b
 
 class CalculadoraCientifica:
     def logaritmo(self, x):
