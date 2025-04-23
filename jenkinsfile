@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh '. venv/bin/activate && python3 -m pytest prueba.py'
+                sh '. venv/bin/activate && python3 -m pytest test_calculadora.py'
             }
         }
         stage('Deploy') {
